@@ -1,0 +1,31 @@
+[
+ {
+   "pergunta": "Qual o nome do ultimo livro do novo testamento?",
+   "op1": "Apocalipse",
+   "op2": "João",
+   "op3": "Mateus",
+   "opc": 1,
+   "dica": "Olha lá no fim"
+ },
+ {
+   "pergunta": "Qual o nome do primeiro livro do novo testamento?",
+   "op1": "Marcos",
+   "op2": "Tiago",
+   "op3": "Mateus",
+   "opc": 3,
+   "dica": "Da uma bizoiada lá"
+ },
+ {
+   "pergunta": "Existem quantos livros relacionado ao Evangelho?",
+   "op1": "Dois",
+   "op2": "Quatro",
+   "op3": "Sete",
+   "opc": 2,
+   "dica": "Vá ler a biblia"
+ },
+ {
+   "pergunta": "Parabéns, você respondeu todas as perguntas desta Escola Biblica Dominical",
+   
+   "dica": "Vá ler a biblia"
+ }
+]
