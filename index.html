@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <script data-ad-client="ca-pub-6433440128784351" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-6433440128784351"  async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Bootstrap CSS -->
     <link
@@ -64,7 +64,7 @@
                   </label>
                 </div>
                 <div v-show="indice >= 3" class="card-body">
-                  <div style="height: 100px;">
+                  <div style="height: 130px;">
                     <h5>
                       Faça uma breve leitura sobre os tópicos abordados e saiba
                       como nos ajudar, logo abaixo!  
@@ -72,7 +72,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer" v-show="indice < 3">
                   <div class="row">
                     <div class="col-md button-align">
                       <!-- Botão para acionar modal -->
@@ -138,6 +138,26 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div id="entradaEmail">
+        <div class="container">
+        <div class="row justify-content-center text-left">
+          <div class="col-md inputEmail">
+            <div class="input-group input-group-lg  inputEmail">
+              <input type="text" class="form-control" placeholder="meuEmail@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-danger" type="button" id="button-addon2">Cadastrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md">
+            <small>Ao clicar em cadastar, você estará concordando em receber e-mails referentes à Perguntas EBD</small>
+          </div>
+        </div>
+      </div>
       </div>
 
       <div id="conteudo" class="container text-center">

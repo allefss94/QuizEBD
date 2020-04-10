@@ -40,6 +40,24 @@
     align-items: center;
   }
 
+  #entradaEmail{
+    height: 25vh;
+    background-color: rgb(209, 178, 0);
+   
+  }
+
+  .inputEmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  small{
+    color: wheat;
+    
+  }
+
   #conteudo{
       height: 100vh;
   }
