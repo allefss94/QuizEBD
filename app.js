@@ -5,7 +5,7 @@ var app = new Vue({
     indice: 0,
     selecionado: 0,
     acertos: 0,
-  },
+  }, 
   methods: {
     aumentaPergunta: function () {
       if (Number(this.selecionado) === Number(this.pergunta["opc"])) {

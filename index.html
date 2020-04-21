@@ -1,219 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>Quiz EBD</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="Perguntas Escola Biblica Dominical - ICM" />
-    
-    <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 
-    <script src="https://use.fontawesome.com/b6b377cd9e.js"></script>
-    <script data-ad-client="ca-pub-6433440128784351"  async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  </head>
+<head>
+  <title>Quiz EBD</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Perguntas Escola Biblica Dominical - ICM" />
 
-  <body>
-    <div id="app">
-      <div id="header">
-        <div class="container text-center">
-          <h1 class="">Quiz EBD</h1>
-          <div class="row justify-content-center">
-            <div class="col-8">
-              <div class="card borda cardbody">
-                <div class="card-header colorCardHeader">
-                  <h3>{{pergunta.pergunta}}</h3>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/b6b377cd9e.js"></script>
+  <script data-ad-client="ca-pub-6433440128784351" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div id="header">
+      <div class="container text-left">
+        <h1 class=" text-center">Quiz EBD - 12/04/2020</h1>
+        <div class=" row justify-content-center">
+          <div class="col-8">
+            <div class="card borda cardbody">
+              <div class="card-header colorCardHeader">
+                <h3>{{pergunta.pergunta}}</h3>
+              </div>
+              <div v-show="indice < 4" class=" card-body perguntas-align">
+                <label>
+                  <input name="op" type="radio" value="1" v-model="selecionado" />
+                  {{pergunta.op1}}
+                </label>
+
+                <label>
+                  <input name="op" type="radio" value="2" v-model="selecionado" />
+                  {{pergunta.op2}}
+                </label>
+
+                <label>
+                  <input name="op" type="radio" value="3" v-model="selecionado" />
+                  {{pergunta.op3}}
+                </label>
+              </div>
+              <div v-show="indice >= 4" class="card-body">
+                <div style="height: 130px;">
+                  <h5>
+                    Faça uma breve leitura sobre os tópicos abordados e saiba
+                    como nos ajudar, logo abaixo!
+                  </h5>
+                  </a>
                 </div>
-                <div v-show="indice < 3" class="card-body perguntas-align">
-                  <label>
-                    <input
-                      name="op"
-                      type="radio"
-                      value="1"
-                      v-model="selecionado"
-                    />
-                    {{pergunta.op1}}
-                  </label>
+              </div>
+              <div class="card-footer" v-show="indice < 4">
+                <div class="row">
+                  <div class="col-md button-align">
+                    <!-- Botão para acionar modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo">
+                      Dica
+                    </button>
 
-                  <label>
-                    <input
-                      name="op"
-                      type="radio"
-                      value="2"
-                      v-model="selecionado"
-                    />
-                    {{pergunta.op2}}
-                  </label>
-
-                  <label>
-                    <input
-                      name="op"
-                      type="radio"
-                      value="3"
-                      v-model="selecionado"
-                    />
-                    {{pergunta.op3}}
-                  </label>
-                </div>
-                <div v-show="indice >= 3" class="card-body">
-                  <div style="height: 130px;">
-                    <h5>
-                      Faça uma breve leitura sobre os tópicos abordados e saiba
-                      como nos ajudar, logo abaixo!  
-                    </h5>
-                    </a>
-                  </div>
-                </div>
-                <div class="card-footer" v-show="indice < 3">
-                  <div class="row">
-                    <div class="col-md button-align">
-                      <!-- Botão para acionar modal -->
-                      <button
-                        type="button"
-                        class="btn btn-primary"
-                        data-toggle="modal"
-                        data-target="#modalExemplo"
-                      >
-                        Dica
-                      </button>
-
-                      <!-- Modal -->
-                      <div
-                        class="modal fade"
-                        id="modalExemplo"
-                        tabindex="-1"
-                        role="dialog"
-                        aria-labelledby="dicaPergunta"
-                        aria-hidden="true"
-                      >
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="dicaPergunta">
-                                Dica para pergunta : {{pergunta.pergunta}}
-                              </h5>
-                              <button
-                                type="button"
-                                class="close"
-                                data-dismiss="modal"
-                                aria-label="Fechar"
-                              >
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              {{pergunta.dica}}
-                            </div>
-                            <div class="modal-footer">
-                              <button
-                                type="button"
-                                class="btn btn-primary"
-                                data-dismiss="modal"
-                              >
-                                Fechar
-                              </button>
-                            </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="dicaPergunta"
+                      aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="dicaPergunta">
+                              Dica para pergunta : {{pergunta.pergunta}}
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            {{pergunta.dica}}
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">
+                              Fechar
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <span class="badge badge-info">{{acertos}}</span>
-                      <button
-                        class="btn btn-success"
-                        @click="aumentaPergunta()"
-                      >
-                        Próxima
-                      </button>
                     </div>
+                    <span class="badge badge-info">{{acertos}}</span>
+                    <button class="btn btn-success" @click="aumentaPergunta()">
+                      Próxima
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="entradaEmail">
-        <div class="container">
-        <div class="row justify-content-center text-left">
-          <div class="col-md inputEmail">
-            <div class="input-group input-group-lg  inputEmail">
-              <input type="text" class="form-control" placeholder="meuEmail@email.com" aria-label="Recipient's username" aria-describedby="button-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-danger" type="button" id="button-addon2">Cadastrar</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-md">
-            <small>Ao clicar em cadastar, você estará concordando em receber e-mails referentes à Perguntas EBD</small>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <div id="conteudo" class="container text-center">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <h3 class="mt-4 mb-2">Como posso ajudar?</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              reiciendis aspernatur quas ex autem hic! Labore reprehenderit
-              deleniti perspiciatis fugit! Alias, consequatur! Sapiente tenetur
-              possimus ipsam quos unde molestias ullam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              reiciendis aspernatur quas ex autem hic! Labore reprehenderit
-              deleniti perspiciatis fugit! Alias, consequatur! Sapiente tenetur
-              possimus ipsam quos unde molestias ullam.
-            </p>
-            <h3 class="mt-4 mb-2">Conteúdo EBD</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              reiciendis aspernatur quas ex autem hic! Labore reprehenderit
-              deleniti perspiciatis fugit! Alias, consequatur! Sapiente tenetur
-              possimus ipsam quos unde molestias ullam.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-              reiciendis aspernatur quas ex autem hic! Labore reprehenderit
-              deleniti perspiciatis fugit! Alias, consequatur! Sapiente tenetur
-              possimus ipsam quos unde molestias ullam.
-            </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="app.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div id="entradaEmail">
+      <div class="container">
+        <div class="row justify-content-center" id="alturabotoes">
+          <div class="col-8 botoes">
+            <a class="btn btn-danger corbotao" href="http://www.radiomaanaim.com.br/">Radio Manaain</a>
+
+            <a class="btn btn-danger corbotao" href="https://www.igrejacristamaranata.org.br/">Igreja Cristã
+              Maranata</a>
+
+            <a class="btn btn-danger corbotao" href="https://www.institutoicm.org.br/">Institu Biblico</a>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div id="conteudo" class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h3 class="mt-4 mb-2">Como posso ajudar?</h3>
+          <p>
+            <strong>A paz do Senhor Jesus!</strong>
+          </p>
+          <p>
+            Queremos atrávez deste simples Quiz contribuir para o aprendizado dos conteúdos das Escolas Biblicas
+            Dominicais, realizadas pela Igreja Cristã Maranata.
+            Pedimos aos irmãos e irmãs que orem por essa iniciativa para que possamos continuar contribuindo.
+          </p>
+          <div>
+            <p>Entre em contato pelo Whatsapp para contribuir com as perguntas e resposta. Ou qualquer outra
+              contribuição.</p>
+            <a href="https://api.whatsapp.com/send?phone=5594988040875&text=Olá,%20gostaria%20de%20contribuir%20com%20o%20quiz"
+              class="btn btn-sm btn-primary" target="_blank">Fale conosco</a>
+          </div>
+
+          <h3 class="mt-4 mb-2">Conteúdo EBD 12/04/2020</h3>
+          <h5>
+            Texto base para o ensino de hoje: Isaías 38:1-8
+
+
+          </h5>
+          <p>
+            Lendo o texto do profeta Isaías 38:1-8, encontramos o quadro histórico que envolve a cura do rei
+            Ezequias. Destaque algumas lições proféticas que podemos encontrar nos versos 2,5,6,8, Resumindo ao final em
+            duas palavras o projeto profético para Israel e a Igreja.
+
+
+          </p>
+          <p>
+            <strong> RESPOSTA 1:</strong>
+
+            Isaías 38:2
+            “Então, virou Ezequias o rosto para a parede e orou ao SENHOR”.
+          </p>
+          <p>
+            <strong> RESPOSTA 2:</strong>
+            Isaías 38:5
+            “Vai e dize a Ezequias: Assim diz o SENHOR, o Deus de Davi, teu pai: Ouvi a tua oração e vi as tuas
+            lágrimas; eis que acrescentarei aos teus dias quinze anos”.
+          </p>
+          <p>
+            <strong> RESPOSTA 3:</strong>
+            Isaías 38:6
+            “E livrar-te-ei das mãos do rei da Assíria, a ti, e a esta cidade; eu defenderei esta cidade”.
+          </p>
+          <p>
+            <strong> RESPOSTA 4:</strong>
+            Isaías 38:8
+            “Eis que farei que a sombra dos graus, que passou com o sol pelos graus do relógio de Acaz, volte dez graus
+            atrás. Assim, recuou o sol dez graus pelos graus que já tinha andado”.
+
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="app.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

@@ -1,31 +1,39 @@
 [
  {
-   "pergunta": "Qual o nome do ultimo livro do novo testamento?",
-   "op1": "Apocalipse",
-   "op2": "João",
-   "op3": "Mateus",
-   "opc": 1,
-   "dica": "Olha lá no fim"
- },
- {
-   "pergunta": "Qual o nome do primeiro livro do novo testamento?",
-   "op1": "Marcos",
-   "op2": "Tiago",
-   "op3": "Mateus",
-   "opc": 3,
-   "dica": "Da uma bizoiada lá"
- },
- {
-   "pergunta": "Existem quantos livros relacionado ao Evangelho?",
-   "op1": "Dois",
-   "op2": "Quatro",
-   "op3": "Sete",
+   "pergunta": "Qual lição prófetica encontrada no versiculo 2 de Isaías 38?",
+   "op1": "Ezequias lamentou e murmurou.",
+   "op2": "Ezequias virou o rosto para a parede e orou ao SENHOR.",
+   "op3": "Ezequias não deu ouvidos ao proféta.",
    "opc": 2,
-   "dica": "Vá ler a biblia"
+   "dica": "Isaías 38 - 2"
+ },
+ {
+   "pergunta": "Qual lição prófetica encontrada no versiculo 5 de Isaías 38?",
+   "op1": "O Senhor deu uma novo nascimento ao acrescentar 15 anos à vida de Ezequias.",
+   "op2": "Ezequias ficou desamparado.",
+   "op3": "Nada aconteceu ao rei Ezequias.",
+   "opc": 1,
+   "dica": "Isaías 38 - 5"
+ },
+ {
+   "pergunta": "Qual lição prófetica encontrada no versiculo 6 de Isaías 38?",
+   "op1": "O Senhou deixou Israel perecer nas mãos dos Assirios.",
+   "op2": "Eles venceram a batalha sem a ajuda de Deus.",
+   "op3": "O Senhor os livrou do rei da Assiria e protejeu a cidade.",
+   "opc": 3,
+   "dica": "Isaías 38 - 6"
+ },
+ {
+   "pergunta": "Qual lição prófetica encontrada no versiculo 8 de Isaías 38?",
+   "op1": "Nenhum sinal o Senhor realizou.",
+   "op2": "O Senhor fez o relógio de Acaz voltar 10 graus, Mostrando que Ele é dono o tempo.",
+   "op3": "O tempo não obedeceu a ordem de Deus.",
+   "opc": 2,
+   "dica": "Isaías 38 - 8"
  },
  {
    "pergunta": "Parabéns, você respondeu todas as perguntas desta Escola Biblica Dominical",
    
-   "dica": "Vá ler a biblia"
+   "dica": ""
  }
 ]

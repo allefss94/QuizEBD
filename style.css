@@ -46,22 +46,26 @@
 
   #entradaEmail{
     height: 25vh;
-    background-color: rgb(0, 103, 134);
-   
+    background-color: rgb(0, 103, 134);   
   }
 
-  .inputEmail{
+
+  .botoes{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.2rem;
+    justify-content: space-between;
+    margin-top: 60px; 
+    color: #fff;
+    text-decoration: none;   
   }
 
-  small{
-    color: rgb(255, 255, 255);
-    
+  .corbotao{
+    background-color: rgb(211, 2, 2);
+    cursor: pointer;
   }
-
+  
   #conteudo{
       height: 100vh;
+  }
+  p{
+    padding: 15px 0px;
   }
