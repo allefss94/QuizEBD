@@ -1,6 +1,6 @@
 [
   {
-    "Pergunta": "Qual a palavra e os motivos que deram incío à rebelião do homem contra Deus?",
+    "pergunta": "Qual a palavra e os motivos que deram incío à rebelião do homem contra Deus?",
     "op1": "Palavra: Inocência - Motivos: Não conheciam as consequências",
     "op2": "Palavra: Mentira - Motivos: Não morrereis e sereis como Deus",
     "op3": "Palavra: Sabedoria - Motivos: Tementes à Deus e Obediêntes",
@@ -8,7 +8,7 @@
     "dica": "Genesis 3: 4 - 5"
   },
   {
-    "Pergunta": "Após o pecado da desobediência, qual a maior transformação sofrida pelo homem?",
+    "pergunta": "Após o pecado da desobediência, qual a maior transformação sofrida pelo homem?",
     "op1": "Se tornou aquilo que a serpente tinha afirmado",
     "op2": "Continuou o curso normal de sua vida",
     "op3": "Saiu do estado de inocência, sabendo o bem e o mal.",
@@ -16,7 +16,7 @@
     "dica": "Genesis 3: 4 - 5"
   },
   {
-    "Pergunta": "Qual foi o nome dado ao maior pecado do homem diante de Deus?",
+    "pergunta": "Qual foi o nome dado ao maior pecado do homem diante de Deus?",
     "op1": "Desobediência",
     "op2": "Idolatria",
     "op3": "Adultério",
@@ -24,7 +24,7 @@
     "dica": "Genesis 3: 4 - 5"
   },
   {
-    "Pergunta": "Qual o caminho que leva o homem de volta para Deus?",
+    "pergunta": "Qual o caminho que leva o homem de volta para Deus?",
     "op1": "Razão",
     "op2": "Religião",
     "op3": "Obediênicia",
