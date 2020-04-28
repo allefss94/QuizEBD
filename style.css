@@ -71,7 +71,7 @@
     padding: 15px 0px;
   }
 
-  @media screen and (max-width: 600px){
+  @media screen and (max-width: 1000px){
     #header {
       background: rgb(163, 18, 18);
       background: radial-gradient(
@@ -79,7 +79,7 @@
         rgba(163, 18, 18, 1) 0%,
         rgb(252, 19, 65) 100%
       );
-      height: 130vh;
+      height: 120vh;
       
     }
   }
