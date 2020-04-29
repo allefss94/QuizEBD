@@ -1,0 +1,41 @@
+
+[
+  {
+    "pergunta": "Qual a palavra e os motivos que deram incío à rebelião do homem contra Deus?",
+    "op1": "Palavra: Inocência - Motivos: Não conheciam as consequências",
+    "op2": "Palavra: Mentira - Motivos: Não morrereis e sereis como Deus",
+    "op3": "Palavra: Sabedoria - Motivos: Tementes à Deus e Obediêntes",
+    "opc": 2,
+    "dica": "Genesis 3: 4 - 5"
+  },
+  {
+    "pergunta": "Após o pecado da desobediência, qual a maior transformação sofrida pelo homem?",
+    "op1": "Se tornou aquilo que a serpente tinha afirmado",
+    "op2": "Continuou o curso normal de sua vida",
+    "op3": "Saiu do estado de inocência, sabendo o bem e o mal.",
+    "opc": 3,
+    "dica": "Genesis 3: 4 - 5"
+  },
+  {
+    "pergunta": "Qual foi o nome dado ao maior pecado do homem diante de Deus?",
+    "op1": "Desobediência",
+    "op2": "Idolatria",
+    "op3": "Adultério",
+    "opc": 1,
+    "dica": "Genesis 3: 4 - 5"
+  },
+  {
+    "pergunta": "Qual o caminho que leva o homem de volta para Deus?",
+    "op1": "Razão",
+    "op2": "Religião",
+    "op3": "Obediênicia",
+    "opc": 3,
+    "dica": "Romanos 5:19"
+  },
+  {
+    "pergunta": "Parabéns, você respondeu todas as perguntas desta Escola Biblica Dominical",
+    
+    "dica": ""
+  }
+]
+  

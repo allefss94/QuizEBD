@@ -1,0 +1,34 @@
+#header{
+    height: 70vh;
+    background: rgb(163, 18, 18);
+    background: radial-gradient(
+      circle,
+      rgba(163, 18, 18, 1) 0%,
+      rgb(252, 19, 65) 100%
+    );
+    color: white;
+}
+
+#texto-header{
+    margin-top: 80px;
+}
+#texto-base{
+    font-size: 70px;
+}
+
+#botoes{
+    margin-top: 80px;
+}
+
+.mb{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px){
+    #header{
+        height: 90vh;
+    }
+    #botoes{
+        margin-top: 30px;
+    }
+}
